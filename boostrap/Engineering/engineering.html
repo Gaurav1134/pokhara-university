@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Fields</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(45deg, #2575fc, #6a11cb);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #2575fc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Container */
+    .container {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Grid of Buttons */
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    /* Button Styles */
+    .button {
+      padding: 15px 20px;
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .button:active {
+      transform: translateY(0);
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    Engineering Fields Portal
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Select an Engineering Field</h1>
+    <div class="button-grid">
+      <button class="button" onclick="handleClick('Electrical Engineering')">Electrical Engineering</button>
+      <button class="button" onclick="handleClick('Computer Engineering')">Computer Engineering</button>
+      <button class="button" onclick="handleClick('Civil Engineering')">Civil Engineering</button>
+      <button class="button" onclick="handleClick('Bachelor of Engineering in IT')">BE in Information Technology</button>
+      <button class="button" onclick="handleClick('Civil and Rural Engineering')">Civil and Rural Engineering</button>
+      <button class="button" onclick="handleClick('Master of Science in Construction')">MSc in Construction</button>
+      <button class="button" onclick="handleClick('Bachelor of Software Engineering')">Bachelor of Software Engineering</button>
+      <button class="button" onclick="handleClick('Electronics and Communication')">Electronics & Communication</button>
+      <button class="button" onclick="handleClick('Architecture')">Architecture</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2024 Engineering Portal. All rights reserved. 
+    <br>
+    <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a>
+  </footer>
+
+  <script>
+    function handleClick(field) {
+      
+        if (field === 'Electrical Engineering') {
+            window.location.href = 'electrical.html'; }
+      // Replace with navigation or other actions as needed
+      // Example: window.location.href = `${field.toLowerCase().replace(/\s+/g, '-')}.html`;
+    }
+  </script>
+</body>
+</html>
